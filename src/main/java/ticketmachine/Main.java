@@ -8,5 +8,8 @@ public class Main {
 		machine.insertMoney(60);
 		System.out.println("L'utilisateur appuie sur 'Impression ticket'");
 		machine.printTicket();
+        System.out.println("Voici votre reçu");
+        System.out.println("Voici le reste de votre montant : " + machine.getBalance() + " centimes");
+        machine.refund();
 	}
 }
